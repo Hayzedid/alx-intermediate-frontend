@@ -1,0 +1,23 @@
+# SASS Installation Steps (Windows / general)
+
+1. Ensure Node.js is installed (recommended v20.16.0). Download from https://nodejs.org or use nvm.
+2. Open PowerShell and verify node and npm are available:
+   node -v
+   npm -v
+3. Install sass (Dart Sass) locally or globally. To install locally in a project:
+   npm init -y
+   npm install sass@3.7.4 --save-dev
+
+   Or install globally (requires admin privileges):
+   npm install -g sass@3.7.4
+
+4. Verify installation:
+   sass --version
+
+5. Compile or run sass files as required, for example:
+   sass 0-debug_log.scss
+
+Notes:
+- On Ubuntu you can use nvm to install Node.js: curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+- After installing nvm, run: nvm install 20.16.0
+- Then install sass via npm as shown above.
